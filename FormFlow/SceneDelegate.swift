@@ -16,10 +16,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         //guard let _ = (scene as? UIWindowScene) else { return }
         guard let windowScene = (scene as? UIWindowScene) else { return }
+        let  nextToNavigateController = UINavigationController(rootViewController: HomeViewController())
               
               window = UIWindow(frame: windowScene.coordinateSpace.bounds)
               window?.windowScene = windowScene
-              window?.rootViewController = HomeViewController()
+              window?.rootViewController = nextToNavigateController
               window?.makeKeyAndVisible()
     }
 

@@ -67,28 +67,28 @@ class HomeViewController: UIViewController {
        func addObjectToStackView()
        {
             let textField1 = UITextField()
-            textField1.placeholder = "Name"
+            textField1.placeholder = "Enter your name here"
            textField1.backgroundColor = UIColor.white
            textField1.layer.borderWidth = 0.5
            textField1.borderStyle = .roundedRect
            textField1.layer.borderColor = UIColor.black.cgColor
 
            let textField2 = UITextField()
-           textField2.placeholder = "Hight"
+           textField2.placeholder = "Enter your height here"
            textField2.backgroundColor = UIColor.white
            textField2.borderStyle = .roundedRect
            textField2.layer.borderWidth = 0.5
            textField2.layer.borderColor = UIColor.black.cgColor
 
            let textField3 = UITextField()
-           textField3.placeholder = "Weight"
+           textField3.placeholder = "Enter your weight here"
            textField3.backgroundColor = UIColor.white
            textField3.borderStyle = .roundedRect
            textField3.layer.borderWidth = 0.5
            textField3.layer.borderColor = UIColor.black.cgColor
 
            let textField4 = UITextField()
-           textField4.placeholder = "Age"
+           textField4.placeholder = "Enter your age here"
            textField4.backgroundColor = UIColor.white
            textField4.borderStyle = .roundedRect
            textField4.layer.borderWidth = 0.5
@@ -152,6 +152,9 @@ class HomeViewController: UIViewController {
        
        @objc func buttonTapped() {
                // Handle button tap event
+          let nextWindow = SecondHomeViewController()
+           navigationController?.pushViewController(nextWindow, animated: true)
+           
            }
        
        func setupLabel()

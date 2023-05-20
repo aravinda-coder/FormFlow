@@ -12,6 +12,7 @@
 		280A81CD2A18F78B00945B31 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A81CC2A18F78B00945B31 /* HomeViewController.swift */; };
 		280A81D22A18F78F00945B31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280A81D12A18F78F00945B31 /* Assets.xcassets */; };
 		280A81D52A18F78F00945B31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280A81D32A18F78F00945B31 /* LaunchScreen.storyboard */; };
+		280A81E12A1957DD00945B31 /* SecondHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A81E02A1957DD00945B31 /* SecondHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		280A81D12A18F78F00945B31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		280A81D42A18F78F00945B31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		280A81D62A18F78F00945B31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		280A81E02A1957DD00945B31 /* SecondHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				280A81C82A18F78B00945B31 /* AppDelegate.swift */,
 				280A81CA2A18F78B00945B31 /* SceneDelegate.swift */,
 				280A81CC2A18F78B00945B31 /* HomeViewController.swift */,
+				280A81E02A1957DD00945B31 /* SecondHomeViewController.swift */,
 				280A81D12A18F78F00945B31 /* Assets.xcassets */,
 				280A81D32A18F78F00945B31 /* LaunchScreen.storyboard */,
 				280A81D62A18F78F00945B31 /* Info.plist */,
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				280A81CD2A18F78B00945B31 /* HomeViewController.swift in Sources */,
+				280A81E12A1957DD00945B31 /* SecondHomeViewController.swift in Sources */,
 				280A81C92A18F78B00945B31 /* AppDelegate.swift in Sources */,
 				280A81CB2A18F78B00945B31 /* SceneDelegate.swift in Sources */,
 			);
