@@ -20,7 +20,7 @@ class DayListViewController: UIViewController,UITableViewDataSource ,UITableView
        ]
        
        let tableView = UITableView()
-
+       let headerLable = UILabel()
        override func viewDidLoad() {
            super.viewDidLoad()
            view.backgroundColor = UIColor.white
@@ -32,13 +32,13 @@ class DayListViewController: UIViewController,UITableViewDataSource ,UITableView
            
            tableView.translatesAutoresizingMaskIntoConstraints = false
            NSLayoutConstraint.activate([
-               tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
+               tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40),
                tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 0),
                tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -0),
                tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -0),
     
                        ])
-          
+          setupHeader()
        }
        
        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,13 +56,38 @@ class DayListViewController: UIViewController,UITableViewDataSource ,UITableView
        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            tableView.deselectRow(at: indexPath, animated: true)
            print("cell of \(days[indexPath.row].name) is clicked")
+           let nextScreen = ExerciseViewController()
+           navigationController?.pushViewController(nextScreen, animated: true)
        }
        
+    func setupHeader()
+    {
+        view.addSubview(headerLable)
+        
+        headerLable.text = "Lets Start!"
+        headerLable.font = UIFont.boldSystemFont(ofSize: 25)
+        headerLable.textColor = UIColor.black
+        headerLable.textAlignment = .left
        
+        
+        headerLable.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            headerLable.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 5),
+            headerLable.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 1),
+            headerLable.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -1),
+        //    welcomeLabel.heightAnchor.constraint(equalToConstant: 40)
+         //   stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -70),
+ 
+         
+                    ])
+        
+        
+    }
       
 
 
    }
+
 
    class CustomeCell : UITableViewCell {
        
