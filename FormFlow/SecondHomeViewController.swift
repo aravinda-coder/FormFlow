@@ -137,7 +137,7 @@ class SecondHomeViewController: UIViewController {
     }
     @objc func buttonTapped() {
             // Handle button tap event
-       let nextWindow = ExerciseListViewController()
+       let nextWindow = DayListViewController()
         navigationController?.pushViewController(nextWindow, animated: true)
         
         }

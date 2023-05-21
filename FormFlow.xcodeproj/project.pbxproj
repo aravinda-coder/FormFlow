@@ -13,7 +13,7 @@
 		280A81D22A18F78F00945B31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280A81D12A18F78F00945B31 /* Assets.xcassets */; };
 		280A81D52A18F78F00945B31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280A81D32A18F78F00945B31 /* LaunchScreen.storyboard */; };
 		280A81E12A1957DD00945B31 /* SecondHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A81E02A1957DD00945B31 /* SecondHomeViewController.swift */; };
-		28727C792A19DA79004043E1 /* ExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28727C782A19DA79004043E1 /* ExerciseListViewController.swift */; };
+		28727C792A19DA79004043E1 /* DayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28727C782A19DA79004043E1 /* DayListViewController.swift */; };
 		28727C7B2A1A0688004043E1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28727C7A2A1A0688004043E1 /* TabBarViewController.swift */; };
 		28727C7D2A1A0934004043E1 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28727C7C2A1A0934004043E1 /* ExerciseViewController.swift */; };
 		28727C7F2A1A0987004043E1 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28727C7E2A1A0987004043E1 /* SettingViewController.swift */; };
@@ -29,7 +29,7 @@
 		280A81D42A18F78F00945B31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		280A81D62A18F78F00945B31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		280A81E02A1957DD00945B31 /* SecondHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHomeViewController.swift; sourceTree = "<group>"; };
-		28727C782A19DA79004043E1 /* ExerciseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewController.swift; sourceTree = "<group>"; };
+		28727C782A19DA79004043E1 /* DayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayListViewController.swift; sourceTree = "<group>"; };
 		28727C7A2A1A0688004043E1 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		28727C7C2A1A0934004043E1 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		28727C7E2A1A0987004043E1 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 				280A81C82A18F78B00945B31 /* AppDelegate.swift */,
 				280A81CA2A18F78B00945B31 /* SceneDelegate.swift */,
 				280A81CC2A18F78B00945B31 /* HomeViewController.swift */,
-				28727C782A19DA79004043E1 /* ExerciseListViewController.swift */,
+				28727C782A19DA79004043E1 /* DayListViewController.swift */,
 				280A81E02A1957DD00945B31 /* SecondHomeViewController.swift */,
 				280A81D12A18F78F00945B31 /* Assets.xcassets */,
 				280A81D32A18F78F00945B31 /* LaunchScreen.storyboard */,
@@ -152,7 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28727C792A19DA79004043E1 /* ExerciseListViewController.swift in Sources */,
+				28727C792A19DA79004043E1 /* DayListViewController.swift in Sources */,
 				28727C7D2A1A0934004043E1 /* ExerciseViewController.swift in Sources */,
 				280A81CD2A18F78B00945B31 /* HomeViewController.swift in Sources */,
 				28727C7F2A1A0987004043E1 /* SettingViewController.swift in Sources */,
