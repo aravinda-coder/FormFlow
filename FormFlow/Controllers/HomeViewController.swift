@@ -1,7 +1,11 @@
 
+var glheight : String!
+var glweight : String!
+var glage : String!
+var glName : String!
+
 
 import UIKit
-
 class HomeViewController: UIViewController {
 
     //creating of components
@@ -10,6 +14,11 @@ class HomeViewController: UIViewController {
        let  stackView = UIStackView()
        let label = UILabel()
        let nextButton = UIButton()
+     let textField1 = UITextField()
+    let textField2 = UITextField()
+    let textField3 = UITextField()
+    let textField4 = UITextField()
+    let genderSelect = UISegmentedControl()
        
        
     // should be called all the outside function here to work
@@ -66,47 +75,46 @@ class HomeViewController: UIViewController {
 
        func addObjectToStackView()
        {
-            let textField1 = UITextField()
-            textField1.placeholder = "Enter your name here"
+          
+           
+           
+           
+            //let textField1 = UITextField()
+           textField1.placeholder = "Enter your name here"
            textField1.backgroundColor = UIColor.white
            textField1.layer.borderWidth = 0.5
            textField1.borderStyle = .roundedRect
            textField1.layer.borderColor = UIColor.black.cgColor
 
-           let textField2 = UITextField()
-           textField2.placeholder = "Enter your height here"
+           //let textField2 = UITextField()
+           textField2.placeholder = "Enter your height here - cm"
            textField2.backgroundColor = UIColor.white
            textField2.borderStyle = .roundedRect
            textField2.layer.borderWidth = 0.5
            textField2.layer.borderColor = UIColor.black.cgColor
 
-           let textField3 = UITextField()
-           textField3.placeholder = "Enter your weight here"
+           //let textField3 = UITextField()
+           textField3.placeholder = "Enter your weight here - kg"
            textField3.backgroundColor = UIColor.white
            textField3.borderStyle = .roundedRect
            textField3.layer.borderWidth = 0.5
            textField3.layer.borderColor = UIColor.black.cgColor
 
-           let textField4 = UITextField()
+           //let textField4 = UITextField()
            textField4.placeholder = "Enter your age here"
            textField4.backgroundColor = UIColor.white
            textField4.borderStyle = .roundedRect
            textField4.layer.borderWidth = 0.5
            textField4.layer.borderColor = UIColor.black.cgColor
 
-           let genderSelect = UISegmentedControl()
+           //let genderSelect = UISegmentedControl()
            genderSelect.backgroundColor = UIColor.white
            genderSelect.insertSegment(withTitle: "Male", at: 0, animated: true)
            genderSelect.insertSegment(withTitle: "Female", at: 1, animated: true)
            genderSelect.setTitleTextAttributes([.foregroundColor : UIColor.blue], for: .selected)
            genderSelect.layer.borderWidth = 0.5
            genderSelect.layer.borderColor = UIColor.black.cgColor
-           
-           
-           
-           
-           
-          
+        
            
            label.text = "Start and Go Ahead"
            label.font = UIFont.boldSystemFont(ofSize: 25)
@@ -151,9 +159,23 @@ class HomeViewController: UIViewController {
     }
        
        @objc func buttonTapped() {
-               // Handle button tap event
+           
+           glName = textField1.text
+           glweight = textField2.text
+           glheight = textField3.text
+           glage = textField4.text
+           
+         //       Handle button tap event
           let nextWindow = SecondHomeViewController()
+
+           nextWindow.userName = textField1.text ?? ""
+           nextWindow.height = textField2.text ?? ""
+           nextWindow.weight = textField3.text ?? ""
+           nextWindow.age = textField4.text ?? ""
+           nextWindow.gender = genderSelect.selectedSegmentIndex
+
            navigationController?.pushViewController(nextWindow, animated: true)
+           //print(textField1.text)
            
            }
        
@@ -162,6 +184,8 @@ class HomeViewController: UIViewController {
            
            
        }
+    
+    
 
 }
 

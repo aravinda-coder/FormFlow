@@ -11,15 +11,8 @@ class ExerciseViewController: UIViewController, UITableViewDataSource ,UITableVi
 
     let finishButton = UIButton()
         let startLabel = UILabel()
-
-        let exercises = [
-            Exercise(image: "i1", name: "circle",discription:"rotating hipe", duration: "2min"),
-            Exercise(image: "i2", name: "walking",discription:"best step for whole body ", duration: "2min"),
-            Exercise(image: "i3", name: "Swings",discription:"left and right exercise", duration: "2min"),
-            Exercise(image: "i4", name: "Leg Raises",discription:"simple exercise for leg", duration: "2 min"),
-            Exercise(image: "i5", name: "balling lay",discription:"laying for the ", duration: "2min"),
-            Exercise(image: "i6", name: "circle advanced",discription:"high speed for hipe", duration: "2min")
-        ]
+    var exercisesList = [Exercises]()
+      
         
         let tableView = UITableView()
 
@@ -43,26 +36,37 @@ class ExerciseViewController: UIViewController, UITableViewDataSource ,UITableVi
             
             setupfinishButton()
             setupEXLabel()
+            
+            let anonymousFunction = { (fetchedExercisesList : [Exercises]) in
+                        DispatchQueue.main.async {
+                            self.exercisesList = fetchedExercisesList
+                            self.tableView.reloadData()
+                        }
+                
+                    }
+                    
+                    ExerciseAPI.shared.fetchFilterdExercises(fitnessLevel: glFitnessLevel, goal: glGoal,onCompletion: anonymousFunction)
            
         }
         
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return exercises.count
+            return exercisesList.count
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ExerciseCustomeCell
-            let exercise = exercises[indexPath.row]
-            cell.exImage.image = UIImage(named: exercise.image)
-            cell.exName.text = exercise.name
+            let exercise = exercisesList[indexPath.row]
+            cell.exImage.image = UIImage(named: "bmi")
+            cell.exName.text = exercise.exerciseName
             cell.exDuration.text = exercise.duration
-            cell.exDiscription.text = exercise.discription
+            cell.exGoal.text = exercise.goal
             return cell
         }
         
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             tableView.deselectRow(at: indexPath, animated: true)
-            print("cell of \(exercises[indexPath.row].name) is clicked")
+            showDesAlert(title: "Exercise Details", message: "\(exercisesList[indexPath.row].description)")
+            print("cell of \(exercisesList[indexPath.row].exerciseName) is clicked")
         }
         
         func setupfinishButton()
@@ -90,6 +94,18 @@ class ExerciseViewController: UIViewController, UITableViewDataSource ,UITableVi
             
         }
         
+    
+    func showDesAlert(title:String , message: String)
+        {
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .cancel , handler: nil)
+            alert.addAction(action)
+            DispatchQueue.main.async {
+                self.present(alert, animated: true ,completion: nil)
+            }
+            
+        }
+    
         @objc func buttonTapped() {
                 let nextScreen = DayListViewController()
             navigationController?.pushViewController(nextScreen, animated: true)
@@ -125,18 +141,18 @@ class ExerciseViewController: UIViewController, UITableViewDataSource ,UITableVi
         
         let exImage = UIImageView()
         let exName = UILabel()
-        let exDiscription = UILabel()
+        let exGoal = UILabel()
         let exDuration = UILabel()
         
         override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
             super.init(style: style, reuseIdentifier: reuseIdentifier)
             addSubview(exImage)
             addSubview(exName)
-            addSubview(exDiscription)
+            addSubview(exGoal)
             addSubview(exDuration)
             exImage.frame = CGRect(x: 10, y: 10, width: 100, height: 100)
-            exName.frame = CGRect(x: 120, y: 20, width: 120, height: 30)
-            exDiscription.frame = CGRect(x: 120, y: 40, width: 220, height: 30)
+            exName.frame = CGRect(x: 120, y: 20, width: 200, height: 30)
+            exGoal.frame = CGRect(x: 120, y: 40, width: 200, height: 30)
             exDuration.frame = CGRect(x: 120, y: 70, width: 120, height: 30)
         }
         
@@ -146,9 +162,4 @@ class ExerciseViewController: UIViewController, UITableViewDataSource ,UITableVi
     }
 
 
-    struct Exercise{
-        var image : String
-        var name : String
-        var discription : String
-        var duration : String
-}
+

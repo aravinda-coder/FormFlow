@@ -10,15 +10,16 @@
 		280A81C92A18F78B00945B31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A81C82A18F78B00945B31 /* AppDelegate.swift */; };
 		280A81CB2A18F78B00945B31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A81CA2A18F78B00945B31 /* SceneDelegate.swift */; };
 		280A81CD2A18F78B00945B31 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A81CC2A18F78B00945B31 /* HomeViewController.swift */; };
-		280A81D22A18F78F00945B31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280A81D12A18F78F00945B31 /* Assets.xcassets */; };
 		280A81D52A18F78F00945B31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280A81D32A18F78F00945B31 /* LaunchScreen.storyboard */; };
 		280A81E12A1957DD00945B31 /* SecondHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A81E02A1957DD00945B31 /* SecondHomeViewController.swift */; };
 		28727C792A19DA79004043E1 /* DayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28727C782A19DA79004043E1 /* DayListViewController.swift */; };
-		28727C7B2A1A0688004043E1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28727C7A2A1A0688004043E1 /* TabBarViewController.swift */; };
 		28727C7D2A1A0934004043E1 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28727C7C2A1A0934004043E1 /* ExerciseViewController.swift */; };
-		28727C7F2A1A0987004043E1 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28727C7E2A1A0987004043E1 /* SettingViewController.swift */; };
-		28727C812A1A0F93004043E1 /* OriginalTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28727C802A1A0F93004043E1 /* OriginalTabBarViewController.swift */; };
-		28727C832A1A7F8A004043E1 /* WorkOutPlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28727C822A1A7F8A004043E1 /* WorkOutPlansViewController.swift */; };
+		28CCF4A82A270D2900B1E28C /* ExerciseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCF4A72A270D2900B1E28C /* ExerciseAPI.swift */; };
+		28CCF4AE2A270FF000B1E28C /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCF4AD2A270FF000B1E28C /* Exercises.swift */; };
+		28CCF4B02A272A4600B1E28C /* bottomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCF4AF2A272A4600B1E28C /* bottomNavigationViewController.swift */; };
+		28CCF4B22A272AB500B1E28C /* CustomScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCF4B12A272AB500B1E28C /* CustomScheduleViewController.swift */; };
+		28CCF4B42A272ADC00B1E28C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CCF4B32A272ADC00B1E28C /* ProfileViewController.swift */; };
+		28CCF4B62A27490E00B1E28C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CCF4B52A27490E00B1E28C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,16 +27,17 @@
 		280A81C82A18F78B00945B31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		280A81CA2A18F78B00945B31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		280A81CC2A18F78B00945B31 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		280A81D12A18F78F00945B31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		280A81D42A18F78F00945B31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		280A81D62A18F78F00945B31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		280A81E02A1957DD00945B31 /* SecondHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHomeViewController.swift; sourceTree = "<group>"; };
 		28727C782A19DA79004043E1 /* DayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayListViewController.swift; sourceTree = "<group>"; };
-		28727C7A2A1A0688004043E1 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		28727C7C2A1A0934004043E1 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
-		28727C7E2A1A0987004043E1 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		28727C802A1A0F93004043E1 /* OriginalTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalTabBarViewController.swift; sourceTree = "<group>"; };
-		28727C822A1A7F8A004043E1 /* WorkOutPlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutPlansViewController.swift; sourceTree = "<group>"; };
+		28CCF4A72A270D2900B1E28C /* ExerciseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseAPI.swift; sourceTree = "<group>"; };
+		28CCF4AD2A270FF000B1E28C /* Exercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
+		28CCF4AF2A272A4600B1E28C /* bottomNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottomNavigationViewController.swift; sourceTree = "<group>"; };
+		28CCF4B12A272AB500B1E28C /* CustomScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScheduleViewController.swift; sourceTree = "<group>"; };
+		28CCF4B32A272ADC00B1E28C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		28CCF4B52A27490E00B1E28C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,21 +70,62 @@
 		280A81C72A18F78B00945B31 /* FormFlow */ = {
 			isa = PBXGroup;
 			children = (
+				28CCF4AC2A270F6000B1E28C /* Models */,
+				28CCF4AB2A270F4100B1E28C /* Views */,
+				28CCF4AA2A270E6A00B1E28C /* Controllers */,
+				28CCF4A62A270C6A00B1E28C /* MainNetworking */,
+				28CCF4A92A270D5C00B1E28C /* Supporting */,
+				280A81D32A18F78F00945B31 /* LaunchScreen.storyboard */,
+				280A81D62A18F78F00945B31 /* Info.plist */,
+				28CCF4B52A27490E00B1E28C /* Assets.xcassets */,
+			);
+			path = FormFlow;
+			sourceTree = "<group>";
+		};
+		28CCF4A62A270C6A00B1E28C /* MainNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				28CCF4A72A270D2900B1E28C /* ExerciseAPI.swift */,
+			);
+			path = MainNetworking;
+			sourceTree = "<group>";
+		};
+		28CCF4A92A270D5C00B1E28C /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
 				280A81C82A18F78B00945B31 /* AppDelegate.swift */,
 				280A81CA2A18F78B00945B31 /* SceneDelegate.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		28CCF4AA2A270E6A00B1E28C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				280A81CC2A18F78B00945B31 /* HomeViewController.swift */,
 				28727C782A19DA79004043E1 /* DayListViewController.swift */,
 				280A81E02A1957DD00945B31 /* SecondHomeViewController.swift */,
-				28727C7A2A1A0688004043E1 /* TabBarViewController.swift */,
 				28727C7C2A1A0934004043E1 /* ExerciseViewController.swift */,
-				28727C7E2A1A0987004043E1 /* SettingViewController.swift */,
-				28727C802A1A0F93004043E1 /* OriginalTabBarViewController.swift */,
-				28727C822A1A7F8A004043E1 /* WorkOutPlansViewController.swift */,
-				280A81D12A18F78F00945B31 /* Assets.xcassets */,
-				280A81D32A18F78F00945B31 /* LaunchScreen.storyboard */,
-				280A81D62A18F78F00945B31 /* Info.plist */,
+				28CCF4AF2A272A4600B1E28C /* bottomNavigationViewController.swift */,
+				28CCF4B12A272AB500B1E28C /* CustomScheduleViewController.swift */,
+				28CCF4B32A272ADC00B1E28C /* ProfileViewController.swift */,
 			);
-			path = FormFlow;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		28CCF4AB2A270F4100B1E28C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		28CCF4AC2A270F6000B1E28C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28CCF4AD2A270FF000B1E28C /* Exercises.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +186,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28CCF4B62A27490E00B1E28C /* Assets.xcassets in Resources */,
 				280A81D52A18F78F00945B31 /* LaunchScreen.storyboard in Resources */,
-				280A81D22A18F78F00945B31 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,15 +198,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28727C832A1A7F8A004043E1 /* WorkOutPlansViewController.swift in Sources */,
+				28CCF4A82A270D2900B1E28C /* ExerciseAPI.swift in Sources */,
 				28727C792A19DA79004043E1 /* DayListViewController.swift in Sources */,
 				28727C7D2A1A0934004043E1 /* ExerciseViewController.swift in Sources */,
 				280A81CD2A18F78B00945B31 /* HomeViewController.swift in Sources */,
-				28727C7F2A1A0987004043E1 /* SettingViewController.swift in Sources */,
+				28CCF4B02A272A4600B1E28C /* bottomNavigationViewController.swift in Sources */,
 				280A81E12A1957DD00945B31 /* SecondHomeViewController.swift in Sources */,
+				28CCF4B42A272ADC00B1E28C /* ProfileViewController.swift in Sources */,
+				28CCF4B22A272AB500B1E28C /* CustomScheduleViewController.swift in Sources */,
+				28CCF4AE2A270FF000B1E28C /* Exercises.swift in Sources */,
 				280A81C92A18F78B00945B31 /* AppDelegate.swift in Sources */,
-				28727C812A1A0F93004043E1 /* OriginalTabBarViewController.swift in Sources */,
-				28727C7B2A1A0688004043E1 /* TabBarViewController.swift in Sources */,
 				280A81CB2A18F78B00945B31 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
